@@ -1,8 +1,11 @@
-on:push 
+on: push
 jobs:
-    first-job:
-        runs-on:windows-latest 
-        steps:
-            -run:node -v
-            -run:npm -v
-            -run:npm view rect version
+  first-job:
+    runs-on: windows-latest
+    steps:
+      - name: Check Node.js Version
+        run: node -v
+      - name: Check npm Version
+        run: npm -v
+      - name: Check React Version
+        run: npm view react version
