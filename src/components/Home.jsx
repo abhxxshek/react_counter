@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <>
-    <h1>Welcome {name} to MERN Learning</h1>
+    <h1>WELCOME {name} to MERN Learning</h1>
     <Button variant="outlined" onClick={changeValue}>CHANGE</Button> 
     <Button variant="outlined" onClick={changeCount}>CHANGE COUNT</Button> {/* */}
     <small>button press{count1} times</small><br /><br />
